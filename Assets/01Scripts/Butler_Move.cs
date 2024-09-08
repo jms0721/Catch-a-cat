@@ -65,4 +65,14 @@ public class Butler_Move : MonoBehaviour
             }
         }
     }
+
+    //코인먹기
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Item")
+        {
+            //코인 먹으면 사라지기
+            collision.gameObject.SetActive(false);
+        }
+    }
 }

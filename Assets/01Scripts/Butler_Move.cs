@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Butler_Move : MonoBehaviour
 {
+    public GameManger gamerManger;
     public float maxSpeed;
     public float jumpPower;
     Rigidbody2D rigid;
@@ -49,11 +50,11 @@ public class Butler_Move : MonoBehaviour
 
         if (rigid.velocity.x > maxSpeed)//오른쪽 최대 속력
             rigid.velocity = new Vector2(maxSpeed, rigid.velocity.y);
-        else if (rigid.velocity.x < maxSpeed*(-1))//왼쪽 최대 속력
-            rigid.velocity = new Vector2(maxSpeed*(-1), rigid.velocity.y);
+        else if (rigid.velocity.x < maxSpeed * (-1))//왼쪽 최대 속력
+            rigid.velocity = new Vector2(maxSpeed * (-1), rigid.velocity.y);
 
         //지형 확인
-        if(rigid.velocity.y < 0)
+        if (rigid.velocity.y < 0)
         {
             Debug.DrawRay(rigid.position, Vector3.down, new Color(0, 1, 0));
             RaycastHit2D rayHit = Physics2D.Raycast(rigid.position, Vector3.down, 1, LayerMask.GetMask("Platform"));
@@ -66,13 +67,19 @@ public class Butler_Move : MonoBehaviour
         }
     }
 
-    //코인먹기
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Item")
         {
+            //점수
+            gamerManger.stagePoint += 100;
             //코인 먹으면 사라지기
             collision.gameObject.SetActive(false);
+        }
+        else if (collision.gameObject.tag == "Finish")
+        {
+            //다음 스테이지로 이동
+            gamerManger.NextStage();
         }
     }
 }

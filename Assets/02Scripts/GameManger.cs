@@ -10,6 +10,7 @@ public class GameManger : MonoBehaviour
     public int totalPoint;
     public int stagePoint;
     public int stageIndex;
+    public GameManger[] Stages;
 
     public void NextStage()
     {

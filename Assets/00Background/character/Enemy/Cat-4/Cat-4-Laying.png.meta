@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: b907b7b529d92e942ae8be832e61b6ec
+guid: a7e7516a5cf0e9446877913d2fb9c3b8
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat-4-Meow_0
+      name: Cat-4-Laying_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4c60bdebf54450c46b297f22723643b1
-      internalID: 2100681314
+      spriteID: e89e625758c517448a79b449c58e33e4
+      internalID: 260783855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Meow_1
+      name: Cat-4-Laying_1
       rect:
         serializedVersion: 2
         x: 50
@@ -139,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19813353733a9c8419b703f3e6e4d775
-      internalID: 1352323641
+      spriteID: be3a5a1f64a2c3d4185d5df225f8fca2
+      internalID: -1823689898
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Meow_2
+      name: Cat-4-Laying_2
       rect:
         serializedVersion: 2
         x: 100
@@ -160,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47e4c3321a1f80345b214db7c20372e8
-      internalID: -474946552
+      spriteID: 26064d77840058944b4875cf2c2fd4b0
+      internalID: -1787234460
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Meow_3
+      name: Cat-4-Laying_3
       rect:
         serializedVersion: 2
         x: 150
@@ -181,8 +182,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d1af67466b755d45ba7cdbf340bed49
-      internalID: 674727958
+      spriteID: 159f330e6feb61241bba3a4cf320b510
+      internalID: 2091254265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Laying_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946833979ff55d944891bca516ea6207
+      internalID: 1969136025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Laying_5
+      rect:
+        serializedVersion: 2
+        x: 250
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19c14424ea507c14ba2378f4589ead30
+      internalID: 2023767625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Laying_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1f4d662627175c43b74ef7b7906bd01
+      internalID: 1694760572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Laying_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80995c4e057390e45a45fb0cf847ea21
+      internalID: 526329174
       vertices: []
       indices: 
       edges: []
@@ -198,10 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cat-4-Meow_1: 1352323641
-      Cat-4-Meow_3: 674727958
-      Cat-4-Meow_0: 2100681314
-      Cat-4-Meow_2: -474946552
+      Cat-4-Laying_0: 260783855
+      Cat-4-Laying_1: -1823689898
+      Cat-4-Laying_2: -1787234460
+      Cat-4-Laying_3: 2091254265
+      Cat-4-Laying_4: 1969136025
+      Cat-4-Laying_5: 2023767625
+      Cat-4-Laying_6: 1694760572
+      Cat-4-Laying_7: 526329174
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

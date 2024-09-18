@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 52b8c34256f87954cbafb9da31cf8d9b
+guid: 5a7b7a2372c9d36468409b34488877d9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat-4-Sleeping2_0
+      name: Cat-4-Sitting_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5dd4b00e3ac0ea4ba283af2d95b0a2c
-      internalID: -1154748115
+      spriteID: 4e2656b449bc7cb449f4b9b01da046f7
+      internalID: -1064045995
       vertices: []
       indices: 
       edges: []
@@ -135,7 +136,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cat-4-Sleeping2_0: -1154748115
+      Cat-4-Sitting_0: -1064045995
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 0d45e5243f232b4469f7404847e2718a
+guid: 1da54fb549f0d20479096a395c4e037f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat-4-Sleeping1_0
+      name: Cat-4-Licking 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,8 +119,92 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18ae02f3b80169d47bc6d88bea1bc6ea
-      internalID: 748500235
+      spriteID: 999d10d109e43ec479219b5cf61196a6
+      internalID: 520730209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Licking 1_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ba45c2558d5844d84fbc20249b5bc0
+      internalID: -1303150066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Licking 1_2
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39844281b31c6054f9dad028361d3449
+      internalID: 788673540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Licking 1_3
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276bc8fc89a02134f9f9f5cde656a5e3
+      internalID: -1795862049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cat-4-Licking 1_4
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e16539795e622c47a4de1614b69bc83
+      internalID: 1089283289
       vertices: []
       indices: 
       edges: []
@@ -135,7 +220,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cat-4-Sleeping1_0: 748500235
+      Cat-4-Licking 1_0: 520730209
+      Cat-4-Licking 1_1: -1303150066
+      Cat-4-Licking 1_2: 788673540
+      Cat-4-Licking 1_3: -1795862049
+      Cat-4-Licking 1_4: 1089283289
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

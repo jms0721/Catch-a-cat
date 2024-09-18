@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 29c3063ec7972754b8fb8b4cdef4b34e
+guid: 9aa7249709763ea4c86134fef8dba5a5
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -63,6 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -104,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cat-4-Idle_0
+      name: Cat-4-Walk_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 50
-        height: 50
+        x: 14
+        y: 18
+        width: 23
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31baa34e9b5d286458780fab32d4b465
-      internalID: 700863220
+      spriteID: 9f13d8fc9c09a5f4280fa15665834bb3
+      internalID: -2100683984
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_1
+      name: Cat-4-Walk_1
       rect:
         serializedVersion: 2
-        x: 50
-        y: 0
-        width: 50
-        height: 50
+        x: 63
+        y: 18
+        width: 24
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e628a4ec47136143a1065823c2c51bd
-      internalID: -1451954571
+      spriteID: dc09c541aa520044f94ee38f75c84926
+      internalID: 620971343
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_2
+      name: Cat-4-Walk_2
       rect:
         serializedVersion: 2
-        x: 100
-        y: 0
-        width: 50
-        height: 50
+        x: 112
+        y: 18
+        width: 25
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee3205e61d5d2b4f8e3e9327800f4a5
-      internalID: 341140048
+      spriteID: ffe5e8249d9eee84ebb524d8c48deb88
+      internalID: 555452192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_3
+      name: Cat-4-Walk_3
       rect:
         serializedVersion: 2
-        x: 150
-        y: 0
-        width: 50
-        height: 50
+        x: 161
+        y: 18
+        width: 26
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 156871137ac958244979b774f40474c6
-      internalID: 762189153
+      spriteID: 2037ed86481355844a45a2ffa95cd72e
+      internalID: 66006688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_4
+      name: Cat-4-Walk_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 0
-        width: 50
-        height: 50
+        x: 211
+        y: 18
+        width: 26
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea815ed0081a277498a2452fb4c37043
-      internalID: -252946400
+      spriteID: cc5dc3f7affa8d54eab9d3a414abd12e
+      internalID: -2102496383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_5
+      name: Cat-4-Walk_5
       rect:
         serializedVersion: 2
-        x: 250
-        y: 0
-        width: 50
-        height: 50
+        x: 262
+        y: 18
+        width: 25
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282afb82173a39947979b45c27cfbb94
-      internalID: 756720618
+      spriteID: a516ace9505d0e2478d9d03c7c6d33c1
+      internalID: -393431429
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_6
+      name: Cat-4-Walk_6
       rect:
         serializedVersion: 2
-        x: 300
-        y: 0
-        width: 50
-        height: 50
+        x: 313
+        y: 18
+        width: 24
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a240a1458d25b4458382c54b64f50f3
-      internalID: 776677079
+      spriteID: 2d269cc15f8797844a19f3106a83b712
+      internalID: -1052112211
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cat-4-Idle_7
+      name: Cat-4-Walk_7
       rect:
         serializedVersion: 2
-        x: 350
-        y: 0
-        width: 50
-        height: 50
+        x: 364
+        y: 18
+        width: 23
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -265,50 +266,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 47234c78259ef084ca7c3c92c6749018
-      internalID: -1402085370
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cat-4-Idle_8
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2fa2e18652299e54e8512dcc14d58d3a
-      internalID: -1630355704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cat-4-Idle_9
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 0
-        width: 50
-        height: 50
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39f4b8cfb0670f044837904f41d681a9
-      internalID: -1566392900
+      spriteID: 869125662057bc54a88a63bfdce85d49
+      internalID: 759149157
       vertices: []
       indices: 
       edges: []
@@ -324,16 +283,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Cat-4-Idle_6: 776677079
-      Cat-4-Idle_2: 341140048
-      Cat-4-Idle_7: -1402085370
-      Cat-4-Idle_8: -1630355704
-      Cat-4-Idle_1: -1451954571
-      Cat-4-Idle_4: -252946400
-      Cat-4-Idle_9: -1566392900
-      Cat-4-Idle_0: 700863220
-      Cat-4-Idle_5: 756720618
-      Cat-4-Idle_3: 762189153
+      Cat-4-Walk_0: -2100683984
+      Cat-4-Walk_1: 620971343
+      Cat-4-Walk_2: 555452192
+      Cat-4-Walk_3: 66006688
+      Cat-4-Walk_4: -2102496383
+      Cat-4-Walk_5: -393431429
+      Cat-4-Walk_6: -1052112211
+      Cat-4-Walk_7: 759149157
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

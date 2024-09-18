@@ -67,6 +67,53 @@ public class Butler_Move : MonoBehaviour
         }
     }
 
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag =="Enemy")
+        {
+            if(rigid.velocity.y < 0 && transform.position.y > collision.transform.position.y)
+            {
+                OnAttack(collision.transform);
+            }
+            else//Debug.Log("몬스터와 다음");
+                OnDamaged(collision.transform.position);
+        }
+    }
+
+    void OnAttack(Transform enemy)
+    {
+        //점수
+
+        //리엑션 자세
+        rigid.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
+        //몬스터 잡음
+        EnemyMove enemyMove = enemy.GetComponent<EnemyMove>();
+        enemyMove.OnDamaged();
+    }
+
+    void OnDamaged(Vector2 targetPos)
+    {
+        //레이어 변경
+        gameObject.layer = 11;
+
+        //플레이어 색 변경
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+
+        //몬스터와 다았을 때 튕겨져 나감
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rigid.AddForce(new Vector2(dirc, 1)*7, ForceMode2D.Impulse);
+
+        //에니메이션
+        anim.SetTrigger("doDamaged");
+        Invoke("OffDamaged", 3);
+    }
+
+    void OffDamaged()
+    {
+        gameObject.layer = 10;
+        spriteRenderer.color = new Color(1, 1, 1, 1);
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Item")

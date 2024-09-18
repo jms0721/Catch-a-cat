@@ -13,8 +13,8 @@ public class Cat_Move : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        // 5초 후 실행
-        Invoke("Think", 5);
+        // 3초 후 실행
+        Invoke("Think", 3);
     }
 
     private void FixedUpdate()
@@ -42,8 +42,13 @@ public class Cat_Move : MonoBehaviour
     {
         nextMove = Random.Range(0, 2);
 
-        Invoke("Think", 5);
+        Invoke("Think", 3);
 
         anim.SetInteger("WalkSpeed", nextMove);
+    }
+
+    void DeActive()
+    {
+        gameObject.SetActive(false);
     }
 }

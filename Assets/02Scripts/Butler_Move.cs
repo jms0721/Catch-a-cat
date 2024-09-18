@@ -82,4 +82,10 @@ public class Butler_Move : MonoBehaviour
             gamerManger.NextStage();
         }
     }
+
+    public void VelocityZero()
+    {
+        rigid.velocity = Vector2.zero;
+    }
+
 }

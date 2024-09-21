@@ -14,6 +14,9 @@ public class Butler_Move : MonoBehaviour
     public AudioClip audioFinish;
     public float maxSpeed;
     public float jumpPower;
+    //public int butlerCoins;
+    public int itemPrice = 3000;
+    public GameObject obj;
 
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
@@ -113,6 +116,24 @@ public class Butler_Move : MonoBehaviour
             gamerManager.NextStage();
 
             PlaySound("FINISH");
+        }
+
+        if(collision.CompareTag("ShopItem"))
+        {
+            PurchaseItem();
+        }
+    }
+
+    private void PurchaseItem()
+    {
+        if(gamerManager.stagePoint >= itemPrice)
+        {
+            gamerManager.stagePoint -= itemPrice;
+            Debug.Log("간식 구매 완료, 남음 돈 : " + gamerManager.stagePoint);
+        }
+        else
+        {
+            Debug.Log("동전 부족");
         }
     }
 

@@ -13,7 +13,7 @@ public class Cat_Move : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        // 3초 후 실행
+        // 몇초 후 실행
         Invoke("Think", 1);
     }
 
@@ -46,7 +46,7 @@ public class Cat_Move : MonoBehaviour
     //고양이 움직임
     void Think()
     {
-        nextMove = Random.Range(0, 2);
+        nextMove = Random.Range(1, 2);
 
         Invoke("Think", 3);
 

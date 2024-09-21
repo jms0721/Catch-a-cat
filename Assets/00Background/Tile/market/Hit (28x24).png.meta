@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e3ec232265f6ad147aa2aa71472516d9
+guid: 666cdca5ea5798c4c83a4ef4b87d64c4
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -11,6 +11,9 @@ TextureImporter:
   - first:
       213: -1443808521566509384
     second: Hit (28x24)_2
+  - first:
+      213: 1145515516053686660
+    second: Hit (28x24)_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -56,7 +59,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,10 +120,10 @@ TextureImporter:
       name: Hit (28x24)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 28
-        height: 24
+        x: 1
+        y: 5
+        width: 26
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96f24fa2c5dc1de43842d595ba151afe
+      spriteID: c1c10573edcf8d5488235a250d01ec10
       internalID: 4624569668062661555
       vertices: []
       indices: 
@@ -138,10 +141,10 @@ TextureImporter:
       name: Hit (28x24)_1
       rect:
         serializedVersion: 2
-        x: 28
-        y: 0
-        width: 28
-        height: 24
+        x: 30
+        y: 4
+        width: 24
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4e28e9be324dfe4bac36beef569d048
+      spriteID: 80f607165de238748a1b4717115760fb
       internalID: 6544220175307782732
       vertices: []
       indices: 
@@ -159,10 +162,10 @@ TextureImporter:
       name: Hit (28x24)_2
       rect:
         serializedVersion: 2
-        x: 56
-        y: 0
-        width: 28
-        height: 24
+        x: 59
+        y: 3
+        width: 22
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,8 +173,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ec9bedb6abd7744d9dbdb0fa77ff839
+      spriteID: ddbcee8f6e4b0b24c86e11a7f1463a60
       internalID: -1443808521566509384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hit (28x24)_3
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 1
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e64d01463c42924d8b439561b62eea2
+      internalID: 1145515516053686660
       vertices: []
       indices: 
       edges: []
@@ -190,6 +214,7 @@ TextureImporter:
       Hit (28x24)_0: 4624569668062661555
       Hit (28x24)_1: 6544220175307782732
       Hit (28x24)_2: -1443808521566509384
+      Hit (28x24)_3: 1145515516053686660
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

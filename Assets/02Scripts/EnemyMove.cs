@@ -21,6 +21,12 @@ public class EnemyMove : MonoBehaviour
         Invoke("Think", 5);
     }
 
+    private void Update()
+    {
+        Vector3 currentRotation = transform.rotation.eulerAngles;
+        transform.rotation = Quaternion.Euler(currentRotation.x, currentRotation.y, 0);
+    }
+
     private void FixedUpdate()
     {
         //¿òÁ÷ÀÓ

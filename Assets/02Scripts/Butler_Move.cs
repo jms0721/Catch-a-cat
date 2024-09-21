@@ -1,30 +1,46 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Butler_Move : MonoBehaviour
 {
-    public GameManger gamerManger;
+    public GameManager gamerManager;
+    public AudioClip audioJump;
+    public AudioClip audioAttack;
+    public AudioClip audioDamaged;
+    public AudioClip audioItem;
+    public AudioClip audioDie;
+    public AudioClip audioFinish;
     public float maxSpeed;
     public float jumpPower;
+
     Rigidbody2D rigid;
     SpriteRenderer spriteRenderer;
     Animator anim;
+    CapsuleCollider2D capsuleCollider;
+    AudioSource audioSource;
 
     private void Awake()
     {
         rigid = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         anim = GetComponent<Animator>();
+        capsuleCollider = GetComponent<CapsuleCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
     {
+        Vector3 currentRotation = transform.rotation.eulerAngles;
+        transform.rotation = Quaternion.Euler(currentRotation.x, currentRotation.y, 0);
+
         //집사 점프
         if (Input.GetButtonDown("Jump") && !anim.GetBool("isJumping"))
         {
             rigid.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
             anim.SetBool("isJumping", true);
+            PlaySound("JUMP");
         }
 
         //스피드 정지
@@ -80,19 +96,43 @@ public class Butler_Move : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Item")
+        {
+            //점수
+            gamerManager.stagePoint += 100;
+            //코인 먹으면 사라지기
+            collision.gameObject.SetActive(false);
+
+            PlaySound("ITEM");
+        }
+        else if (collision.gameObject.tag == "Finish")
+        {
+            //다음 스테이지로 이동
+            gamerManager.NextStage();
+
+            PlaySound("FINISH");
+        }
+    }
+
     void OnAttack(Transform enemy)
     {
         //점수
-
+        gamerManager.stagePoint += 100;
         //리엑션 자세
         rigid.AddForce(Vector2.up * 10, ForceMode2D.Impulse);
         //몬스터 잡음
         EnemyMove enemyMove = enemy.GetComponent<EnemyMove>();
         enemyMove.OnDamaged();
+
+        PlaySound("ATTACK");
     }
 
     void OnDamaged(Vector2 targetPos)
     {
+        //체력 사라짐
+        gamerManager.HealthDown();
         //레이어 변경
         gameObject.layer = 11;
 
@@ -106,6 +146,8 @@ public class Butler_Move : MonoBehaviour
         //에니메이션
         anim.SetTrigger("doDamaged");
         Invoke("OffDamaged", 3);
+
+        PlaySound("DAMAGED");
     }
 
     void OffDamaged()
@@ -114,25 +156,51 @@ public class Butler_Move : MonoBehaviour
         spriteRenderer.color = new Color(1, 1, 1, 1);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    public void OnDie()
     {
-        if (collision.gameObject.tag == "Item")
-        {
-            //점수
-            gamerManger.stagePoint += 100;
-            //코인 먹으면 사라지기
-            collision.gameObject.SetActive(false);
-        }
-        else if (collision.gameObject.tag == "Finish")
-        {
-            //다음 스테이지로 이동
-            gamerManger.NextStage();
-        }
+        spriteRenderer.color = new Color(1, 1, 1, 0.4f);
+
+        spriteRenderer.flipY = true;
+
+        capsuleCollider.enabled = false;
+
+        rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+
+        PlaySound("DIE");
     }
 
     public void VelocityZero()
     {
         rigid.velocity = Vector2.zero;
     }
+
+
+    void PlaySound(string action)
+    {
+        switch (action)
+        {
+            case "JUMP":
+                audioSource.clip = audioJump;
+                break;
+            case "ATTACK":
+                audioSource.clip = audioAttack;
+                break;
+            case "DAMAGED":
+                audioSource.clip = audioDamaged;
+                break;
+            case "ITEM":
+                audioSource.clip = audioItem;
+                break;
+            case "DIE":
+                audioSource.clip = audioDie;
+                break;
+            case "FINISH":
+                audioSource.clip = audioFinish;
+                break;
+                
+        }
+        audioSource.Play();
+    }
+
 
 }

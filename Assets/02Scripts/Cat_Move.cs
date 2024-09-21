@@ -14,7 +14,13 @@ public class Cat_Move : MonoBehaviour
         anim = GetComponent<Animator>();
 
         // 3초 후 실행
-        Invoke("Think", 3);
+        Invoke("Think", 1);
+    }
+
+    private void Update()
+    {
+        Vector3 currentRotation = transform.rotation.eulerAngles;
+        transform.rotation = Quaternion.Euler(currentRotation.x, currentRotation.y, 0);
     }
 
     private void FixedUpdate()
@@ -32,7 +38,7 @@ public class Cat_Move : MonoBehaviour
             //Debug.Log("경고! 이 앞은 낭떨어지"); //앞에 낭떨어지가 있다면 디버깅
             nextMove *= 0;
             CancelInvoke();
-            Invoke("Think", 5);
+            Invoke("Think", 1);
         }
     }
 

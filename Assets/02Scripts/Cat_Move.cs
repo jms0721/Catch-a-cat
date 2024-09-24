@@ -48,7 +48,7 @@ public class Cat_Move : MonoBehaviour
     {
         nextMove = Random.Range(1, 2);
 
-        Invoke("Think", 3);
+        Invoke("Think", 1);
 
         anim.SetInteger("WalkSpeed", nextMove);
     }

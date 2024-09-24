@@ -117,23 +117,15 @@ public class Butler_Move : MonoBehaviour
 
             PlaySound("FINISH");
         }
+        else if (collision.gameObject.tag == "Sanck")
+        {
+            gamerManager.stagePoint -= 3500;
+            //gamerManager.totalPoint -= 3500;
+            gamerManager.sanckPoint += 1;
 
-        if(collision.CompareTag("ShopItem"))
-        {
-            PurchaseItem();
-        }
-    }
+            collision.gameObject.SetActive(false);
 
-    private void PurchaseItem()
-    {
-        if(gamerManager.stagePoint >= itemPrice)
-        {
-            gamerManager.stagePoint -= itemPrice;
-            Debug.Log("간식 구매 완료, 남음 돈 : " + gamerManager.stagePoint);
-        }
-        else
-        {
-            Debug.Log("동전 부족");
+            PlaySound("ITEM");
         }
     }
 

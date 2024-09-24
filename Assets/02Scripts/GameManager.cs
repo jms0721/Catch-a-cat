@@ -13,11 +13,13 @@ public class GameManager : MonoBehaviour
     public int stagePoint;
     public int stageIndex;
     public int health;
+    public int sanckPoint;
     public Butler_Move butler_Move;
     public GameObject[] Stages;
 
     public Image[] UIhealth;
     public Text UIPoint;
+    public Text UISanck;
     public Text UIStage;
     public GameObject UIRestartBtn;
     public GameObject UIRestartFinish;
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         UIPoint.text = (totalPoint + stagePoint).ToString();
+        UISanck.text = sanckPoint.ToString();
     }
 
     public void NextStage()
